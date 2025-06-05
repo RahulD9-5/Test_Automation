@@ -32,7 +32,9 @@ public class LoginErrorValidation extends BaseTest {
 		// TODO Auto-generated method stub
 		
 		initialiseDriver();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(13));
+		if(true) {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(16));
+		}
 
         
 		
