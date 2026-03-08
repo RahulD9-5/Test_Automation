@@ -6,7 +6,7 @@ Feature: Error Validation Test.
   Background:
   Given i landed on eccommerce Page
 
-  @LoginErrorValidationtest
+  @SubmitOrder
   Scenario Outline: Positive Test of Submitting Order
     Given i logged in with username <username> and password <password>
     Then validate that "Incorrect email or password." error is received

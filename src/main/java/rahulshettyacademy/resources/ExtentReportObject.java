@@ -15,6 +15,7 @@ public class ExtentReportObject {
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(reporter);
 		return extent;
+		//These are comments
 	}
 
 }
