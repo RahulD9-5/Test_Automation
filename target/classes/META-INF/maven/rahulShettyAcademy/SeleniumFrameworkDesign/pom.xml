@@ -72,8 +72,6 @@
     <version>7.20.1</version>
 </dependency>
 
-
-
  </dependencies>
  <build>
     <plugins>
@@ -89,17 +87,8 @@
             </configuration>
         </plugin>
 
-        <!-- Maven Surefire Plugin for Test Execution -->
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>3.5.2</version>
-            <configuration>
-                <suiteXmlFiles>
-                    <suiteXmlFile>TestNGSuites\ErrorValidations.xml</suiteXmlFile>
-                </suiteXmlFiles>
-            </configuration>
-        </plugin>
+       
+       
     </plugins>
 </build>
 
@@ -165,6 +154,12 @@
                   <includes>
                   <include>**/TestNGTestRunner.java</include>
                   </includes>
+                  <properties>
+                  <property>
+                  <name>dataproviderthreadcount</name>
+                  <value>4</value>  <!-- or 2,3 based on your need -->
+                  </property>
+                  </properties>
 
                   </configuration>
                   </plugin>
@@ -172,11 +167,7 @@
 			 
 		       </plugins>
 		 
-		 
-
-	 
-	 
- </build>
+		  </build>
 		 
 	 </profile>
  </profiles>

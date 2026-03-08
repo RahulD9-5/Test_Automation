@@ -44,11 +44,14 @@ public class BaseTest {
 	
 	}
 	
+	
 	public String getScreenshot(String testcaseName, WebDriver driver) throws IOException {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File file1 = ts.getScreenshotAs(OutputType.FILE);
 		File file2 = new File(System.getProperty("user.dir") + "\\reports\\" + testcaseName +  ".png");
 		FileUtils.copyFile(file1, file2);
+		System.out.println("Screenshot taken");
+		//testing on Feb28
 		return file2.getAbsolutePath();
 		
 	}

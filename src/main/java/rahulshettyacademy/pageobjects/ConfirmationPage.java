@@ -25,7 +25,7 @@ public class ConfirmationPage {
 		
 		WebElement confirmationsection = driver.findElement(By.cssSelector("table.order-summary"));
 		
-		Assert.assertTrue(confirmationsection.findElements(By.xpath("tbody/div/tr")).stream().anyMatch(product -> product.findElement(By.xpath("//td[2]/div[1]")).getText().equalsIgnoreCase("ADIDAS ORIGINAL")));
+		Assert.assertTrue(confirmationsection.findElements(By.xpath("tbody/div/tr")).stream().anyMatch(product -> product.findElement(By.xpath("//td[2]/div[1]")).getText().equalsIgnoreCase("ZARA COAT 3")));
 		
 	}
 	
