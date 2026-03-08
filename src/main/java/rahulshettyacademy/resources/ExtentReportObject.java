@@ -16,6 +16,7 @@ public class ExtentReportObject {
 		extent.attachReporter(reporter);
 		return extent;
 		//These are comments
+		//Comments added - March 8th 
 	}
 
 }
